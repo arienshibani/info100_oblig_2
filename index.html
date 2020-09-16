@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Metadata -->
+    <title>Document</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Eksterne ressurser (CSS og Javascript) -->
+    <script src="scripts.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Basic JavaScript Calculator</h1>
+
+        <p class="guide">Enter any number in each input box and use the different operators!
+        </p>
+    </header>
+
+
+    <main>
+        <textarea id="text-area-1" placeholder="Input #1" maxlength="8"></textarea>
+        <button onclick="showResult(addition())">+</button>
+        <button onclick="showResult(multiplication())">*</button>
+        <button onclick="showResult(division())">÷</button>
+        <button onclick="showResult(subtraction())">-</button>
+        <button style="background-color: coral;" onclick="clearEntries()">CE</button>
+        <textarea id="text-area-2" placeholder="Input #2" maxlength="8"></textarea>
+    </main>
+
+    <div>
+        <p id="result"> </p>
+    </div>
+
+
+</body>
+
+</html>
